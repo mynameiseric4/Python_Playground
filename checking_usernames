@@ -1,0 +1,12 @@
+current_users = ['admin', 'Eric', 'Mary', 'Smokey', 'Earthling']
+new_users = ['ERIC', 'Larry', 'AdMiN', 'PYTHON', 'coffee']
+check = []
+
+for user in current_users:
+	check.append(user.lower())
+
+for user in new_users:
+	if user.lower() in check:
+		print("I'm sorry, the username {} is already taken. Please choose a different username.").format(user)
+	else:
+		print('Thanks! The username {} is available.').format(user)
