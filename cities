@@ -1,0 +1,32 @@
+cities = {
+	'New York': {
+		'country': 'United States of America',
+		'population': '8.406 million',
+		'fact': 'The first pizzeria in the United States was opened in NYC in 1895',
+		}, 
+	'Delhi': {
+		'country': 'India',
+		'population': '9.879 million',
+		'fact': "The wholesale market at Azadpur is Asia's largest fruit and vegetable market",
+		}, 
+	'Tokyo': {
+		'country': 'Japan',
+		'population': '13,620 million',
+		'fact': 'At over 5,000 square miles, the Greater Tokyo Area is the second largest metropolitan area on the planet in terms of urban landmass',
+		}, 
+	'Beijing': {
+		'country': 'China',
+		'population': '11.510 million',
+		'fact': '"Bei" means northern, and "jing" means capital. Beijing literally means the north capital',
+		}, 
+	'Buenos Aires': {
+		'country': 'Argentina',
+		'population': '2.965 million',
+		'fact': 'The tango originated in brothels in the immigrant ghetto of Buenos Aires in the late 19th century, in what is the present-day harbor of La Boca',
+		}, 
+	}
+
+for city, city_info in sorted(cities.items()):
+	print city
+	print("\tIn the country of {}, this city has a population of {}."+ 
+		" Fun fact: {}.").format(city_info['country'], city_info['population'], city_info['fact'])
