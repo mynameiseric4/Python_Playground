@@ -1,0 +1,15 @@
+glossary = {
+	'print' : 'a function used to display text on a screen',
+	'if' : 'tests if a given variable satifies a given condition',
+	'elif' : 'in the if-elif-else progression, this comes after the if statement to test a given condition',
+	'else' : 'in the if-elif-else progression, this comes at the end and encompasses all conditions not previously met',
+	'for' : 'a term used to loop through a given set of commands',
+	'str' : 'converts a variable of any type into a a string',
+	'int' : 'converts a variable of varying types into an integer',
+	'.lower()' : 'added to the end of an str variable to convert it to all lowercase letters',
+	'.upper()' : 'added to the end of an str variable to convert it to all uppercase letters',
+	}
+
+print("Glossary of Python terms:\n")
+for key, value in sorted(glossary.items()):
+	print("{}: {}.").format(key, value)
